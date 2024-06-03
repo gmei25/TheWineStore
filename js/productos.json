@@ -1,0 +1,112 @@
+[
+    {
+        "id": "tintoUno",
+        "titulo": "Tinto Uno",
+        "imagen": "../img/tinto/tintoUno.jpg",
+        "categoria": {
+            "nombre": "Tintos",
+            "id": "tintos"
+        },
+        "precio": 1000
+    },
+
+    {
+        "id": "tintoDos",
+        "titulo": "Tinto Dos",
+        "imagen": "../img/tinto/tintoDos.jpg",
+        "categoria": {
+            "nombre": "Tintos",
+            "id": "tintos"
+        },
+        "precio": 1500
+    },
+
+    {
+        "id": "tintoTres",
+        "titulo": "Tinto Tres",
+        "imagen": "../img/tinto/tintoTres.jpg",
+        "categoria": {
+            "nombre": "Tintos",
+            "id": "tintos"
+        },
+        "precio": 2000
+    },
+
+    {
+        "id": "tintoCuatro",
+        "titulo": "Tinto Cuatro",
+        "imagen": "../img/tinto/tintoCuatro.jpg",
+        "categoria": {
+            "nombre": "Tintos",
+            "id": "tintos"
+        },
+        "precio": 1250
+    },
+
+    {
+        "id": "blancoUno",
+        "titulo": "Blanco Uno",
+        "imagen": "../img/blanco/blancoUno.jpg",
+        "categoria": {
+            "nombre": "Blancos",
+            "id": "blancos"
+        },
+        "precio": 1000
+    },
+
+    {
+        "id": "blancoDos",
+        "titulo": "Blanco Dos",
+        "imagen": "../img/blanco/blancoDos.jpg",
+        "categoria": {
+            "nombre": "Blancos",
+            "id": "blancos"
+        },
+        "precio": 1500
+    },
+
+    {
+        "id": "rosado",
+        "titulo": "Rosado",
+        "imagen": "../img/rosado/rosado.jpg",
+        "categoria": {
+            "nombre": "Rosado",
+            "id": "rosado"
+        },
+        "precio": 1000
+    },
+
+
+    {
+        "id": "accesorioUno",
+        "titulo": "Accesorio Uno",
+        "imagen": "../img/acceesorios/accesorioUno.jpg",
+        "categoria": {
+            "nombre": "accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+
+    {
+        "id": "accesorioDos",
+        "titulo": "Accesorio Dos",
+        "imagen": "../img/acceesorios/accesorioDos.jpg",
+        "categoria": {
+            "nombre": "accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+
+    {
+        "id": "accesorioTres",
+        "titulo": "Accesorio Tres",
+        "imagen": "../img/acceesorios/accesorioTres.jpg",
+        "categoria": {
+            "nombre": "accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    }
+]
