@@ -1,4 +1,4 @@
-let productosEnCarrito = localStorage.getItem("productosDelCarrito");
+const productosEnCarrito = localStorage.getItem("productosDelCarrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
 const carritoVacio = document.querySelector("#carritoVacio");
@@ -7,11 +7,12 @@ const carritoAcciones = document.querySelector("#carritoAcciones");
 const carritoComprado = document.querySelector("#carritoComprado");
 const botonEliminar = document.querySelectorAll(".eliminarProducto")
 
+
 function cargarProductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0){
 productosEnCarrito = JSON.parse(productosEnCarrito)
 
-        carritoVacio.classList.remove("disabled");
+        carritoVacio.classList.add("disabled");
         carritoProductos.classList.remove("disabled");
         carritoAcciones.classList.remove("disabled");
         carritoComprado.classList.add("disabled");

@@ -1,3 +1,17 @@
+Swal.fire({
+    title: "Sos mayor de 18?",
+    showDenyButton: true,
+    //showCancelButton: true,
+    confirmButtonText: "Si, vamos!",
+    denyButtonText: `No`
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      //Swal.fire("Saved!", "", "success");
+    } else if (result.isDenied) {
+      Swal.fire("No puedes navegar ni comprar en este sitio", "", "info");
+    }
+  });
 let productos = [];
 fetch("../js/productos.json")
     .then(response => response.json())
@@ -42,8 +56,8 @@ categorias.forEach((boton) => {
         e.currentTarget.classList.add("active");
 
         if (e.currentTarget.id != "todos") {
-            const productosCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
-            tituloPpal.innerText = productosCategoria.categoria.nombre;
+            const categorias = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+            tituloPpal.innerText = categorias.categoria.nombre;
 
            
             const productosBtn = productos.filter((producto) => producto.categoria.id === e.currentTarget.id);
@@ -67,7 +81,7 @@ function actualizarBotonesAgregar() {
 
 const productosEnCarritoLS = localStorage.getItem("productosDelCarrito");
 
-const productosEnCarrito = [];
+let productosEnCarrito = [];
 
 
 if (productosEnCarritoLS) {
@@ -78,6 +92,22 @@ if (productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
+    Toastify({
+        text: "producto agregado",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #6b0842, #ffd0eb)",
+          borderRadius: "1rem",
+          textTransform: "uppercase",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     const idBotones = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBotones);
 
