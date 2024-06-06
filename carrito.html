@@ -41,31 +41,36 @@
         </aside>
         <main>
             <h2 class="tituloPrincipal">Carrito</h2>
-            <div class="contenedorCarrito">
-                <p id="carritoVacio" class="carritoVacio disabled">Ups! Parece que todavia no elegiste nada <i class='bx bx-sad'></i></p>
+            <div class="contenedorCarrito disabled">
 
-                <div id="carritoProductos" class="carritoProductos">
-                    <!--SE COMPLETA CON JS-->
-                </div>
+                <p id="carritoVacio" class="carritoVacio disabled">Ups! Parece que todavia no elegiste nada <i class='bx bx-sad'></i></p>
+                
+                <div id="carritoProductos" class="carritoProductos disabled">   
+                    <!--los productos se agregan mediante JS-->
+                </div>    
 
                 <div id="carritoAcciones" class="carritoAcciones disabled">
-                    <div class="catD">
-                        <div id="contenedorTotal" class="accionesTotal">
-                            <p>Total:</p>
-                            <p id="total">$1000</p>
-                        </div>
-                        <button class="comprar">Comprar</button>
+                        <div class="catD">
+                            <div id="contenedorTotal" class="contenedorTotal">
+                                <p>Total:</p>
+                                <p id="total">$1000</p>
+                            </div>
+                            <button id="comprar" class="comprar">Comprar</button>
                     </div>
+                    
                 </div>
-                <p id="carritoComprado" class="carritoComprado disabled">Gracias por elegirnos!</p>
+
+                </div>
+                <p id="comprarCarrito" class="comprarCarrito">Gracias por elegirnos!</p>
             </div>
         </main>
     <!--LIBRERIA C/ JS-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--ARCHIVOS JS-->
-    <script src="./js/main.js"></script>
     <script src="./js/carrito.js"></script>
+    <script src="./js/main.js"></script>
+    
 
 </body>
 </html>
