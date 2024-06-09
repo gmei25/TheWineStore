@@ -79,7 +79,7 @@ function botonesAgregar() {
 
 let productosAgregadosAlCarrito; //el array se guarda en el LS
 
-let productosAgregadosAlCarritoLS = localStorage.getItem("productosEnElCarrito");
+let productosAgregadosAlCarritoLS = localStorage.getItem("productosEnCarrito");
 
 
 if (productosAgregadosAlCarritoLS) {
@@ -118,7 +118,7 @@ if (productosAgregadosAlCarrito.some(producto => producto.id === botonesId)) {
 }
 numeroActualizado();
 
-localStorage.setItem("productosEnElCarrito", JSON.stringify(productosAgregadosAlCarrito));
+localStorage.setItem("productosEnCarrito", JSON.stringify(productosAgregadosAlCarrito));
 
 }
 
