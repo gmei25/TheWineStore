@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         productosAgregadosAlCarrito.length = 0;
         localStorage.setItem("productosEnCarrito", JSON.stringify(productosAgregadosAlCarrito));
 
-        carritoVacio.classList.remove("disabled");
+        carritoVacio.classList.add("disabled");
         carritoProductos.classList.add("disabled");
         carritoAcciones.classList.add("disabled");
         comprarCarrito.classList.remove("disabled");
