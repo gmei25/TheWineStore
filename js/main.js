@@ -7,11 +7,12 @@ Swal.fire({
   }).then((result) => {
     /* Read more about isConfirmed, isDenied below */
     if (result.isConfirmed) {
-      //Swal.fire("Saved!", "", "success");
+    //   Swal.fire("OK!", "", "success");
     } else if (result.isDenied) {
       Swal.fire("No puedes navegar ni comprar en este sitio", "", "info");
     }
   });
+  
 let productos = [];
 fetch("../js/productos.json")
     .then(response => response.json())
